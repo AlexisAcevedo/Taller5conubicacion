@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="10dp"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="401dp"
+        android:layout_height="97dp"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/login"
+        />
+    <EditText
+        android:id="@+id/usuariologin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:hint="usuario"
+        android:textColorHint="@android:color/tertiary_text_light"
+        android:textSize="25dp"
+        android:layout_below="@+id/imageview"
+        />
+    <EditText
+        android:id="@+id/passwordlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:inputType="textPassword"
+        android:hint="contraseña"
+        android:textColorHint="@android:color/tertiary_text_light"
+        android:textSize="25dp"
+        android:layout_below="@+id/usuariologin"
+        />
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordlogin"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/ovalo"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/btnvolverRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnlogin"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ovalo"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:text="Volver a registro"
+        android:textAllCaps="false"
+        android:textSize="25dp"
+        />
+
+
+
+</RelativeLayout>

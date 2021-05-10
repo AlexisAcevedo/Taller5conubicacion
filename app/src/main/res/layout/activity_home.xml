@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home"
+    android:padding="10dp"
+    tools:context=".HomeActivity">
+
+    <Button
+        android:id="@+id/btncamara"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/ovalo"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="Tomar foto"
+        android:textAllCaps="true"
+        android:textSize="25dp"
+        />
+    <Button
+        android:id="@+id/btngaleria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/ovalo"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="Seleccionar imagen"
+        android:textAllCaps="true"
+        android:textSize="25dp"
+        android:layout_below="@+id/btncamara"
+        />
+    <Button
+        android:id="@+id/btnenviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/ovalo"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="Compartir"
+        android:textAllCaps="true"
+        android:textSize="25dp"
+        android:layout_below="@+id/btngaleria"
+        />
+    <Button
+        android:id="@+id/btnsalir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/ovalo"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="Cerrar sesion"
+        android:textAllCaps="true"
+        android:textSize="25dp"
+        android:layout_below="@+id/btnenviar"
+        />
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/btnsalir"
+        />
+
+</RelativeLayout>

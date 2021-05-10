@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="401dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="30dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/registro" />
+    
+    <EditText
+        android:id="@+id/usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:hint="usuario"
+        android:textColorHint="@android:color/tertiary_text_light"
+        android:textSize="25dp"
+        android:layout_below="@+id/imageview" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:inputType="textPassword"
+        android:hint="contraseña"
+        android:textColorHint="@android:color/tertiary_text_light"
+        android:textSize="25dp"
+        android:layout_below="@+id/usuario" />
+
+    <EditText
+        android:id="@+id/repassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:inputType="textPassword"
+        android:hint="reingresar contraseña"
+        android:textColorHint="@android:color/tertiary_text_light"
+        android:textSize="25dp"
+        android:layout_below="@+id/password" />
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/repassword"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/ovalo"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:text="Registrarse"
+        android:textAllCaps="false"
+        android:textSize="25dp" />
+
+    <Button
+        style="?android:attr/buttonBarButtonStyle"
+        android:id="@+id/btnlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnRegistrar"
+        android:layout_marginTop="50dp"
+        android:text="Estoy registrado\nquiero iniciar sesion"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="25dp"/>
+
+</RelativeLayout>
